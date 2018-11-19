@@ -1,0 +1,81 @@
+.modalw {
+  height: 100vh;
+  display: flex;
+  font-family: $font-stack;
+  background-color: $bodybg;
+  font-size: $text-size;
+  color: $textcolor;
+  
+  &__input {
+    position: absolute;
+    bottom: 9999px;
+
+    &:checked {
+      & ~ .modalw__window {
+        display: block;
+        animation: onclick 0.3s cubic-bezier(0.1,0.7,1,1);
+        animation-fill-mode: both;
+      }
+    }
+  }
+
+  &__label-start {
+    margin: auto;
+    background-color: $bgcolor;
+    padding: 1% 2%;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: $bgcolor;
+    }
+  }
+
+  &__action {
+    text-align: center
+  }
+
+  &__text {
+    margin-bottom: 6%;
+  }
+
+  &__window {
+    width: 40%;
+    min-width: 300px;
+    background-color: $bgcolor;
+    padding: 8% 5%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    display: none;
+    text-align: left;
+  }
+
+  &__label-end {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding: 0 5px;
+    font-size: 90%;
+    line-height: 125%;
+    border: 1px solid $textcolor;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+    background-color: $textcolor;
+    color: $bgcolor;
+    }
+  }  
+}
+
+@keyframes onclick {
+  from {
+    transform:translate(-50%, -50%) scale(0.5);
+  }
+
+  to {
+    transform:translate(-50%, -40%) scale(1);
+  }
+}
