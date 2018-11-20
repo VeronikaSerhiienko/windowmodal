@@ -2,7 +2,6 @@
   height: 100vh;
   display: flex;
   font-family: $font-stack;
-  background-color: $bodybg;
   font-size: $text-size;
   color: $textcolor;
   
@@ -45,8 +44,8 @@
     min-width: 300px;
     background-color: $bgcolor;
     padding: 8% 5%;
-    position: fixed;
-    top: 40%;
+    position: absolute;
+    top: 15rem;
     left: 50%;
     display: none;
     text-align: left;
