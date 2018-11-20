@@ -5,6 +5,10 @@ div {
   padding: 0;
 }
 
+body {
+  background: #e0e5ea;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -18,7 +22,6 @@ div {
   display: -ms-flexbox;
   display: flex;
   font-family: "Lato", Arial, sans-serif;
-  background-color: #e0e5ea;
   font-size: 150%;
   color: #949da5;
 }
@@ -64,8 +67,8 @@ div {
   min-width: 300px;
   background-color: #182c3d;
   padding: 8% 5%;
-  position: fixed;
-  top: 40%;
+  position: absolute;
+  top: 15rem;
   left: 50%;
   display: none;
   text-align: left;

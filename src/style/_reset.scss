@@ -5,8 +5,9 @@ div {
   padding: 0;
 }
 
+@import 'variables';
 body {
-  background: #e0e5ea;
+  background: $bodybg;
 }
 
 * {
